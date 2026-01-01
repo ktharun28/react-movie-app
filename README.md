@@ -3,7 +3,7 @@
 A React-based movie browsing application using the TMDB API.
 Users can explore popular movies, search for movies, and view detailed information.
 
-🔗 Live Demo: movie-box-bice.vercel.app
+🔗 Live Demo: https://movie-box-bice.vercel.app/
 ---
 
 ## 🚀 Features
