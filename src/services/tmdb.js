@@ -1,0 +1,31 @@
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+const BASE_URL = "https://api.themoviedb.org/3";
+
+export async function getPopularMovies() {
+  const res = await fetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}`);
+  const data = await res.json();
+  return data.results;
+}
+
+export async function searchMovies(query) {
+  const res = await fetch(
+    `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${query}`
+  );
+  const data = await res.json();
+  return data.results;
+}
+
+export async function getMovieDetails(id) {
+  const res = await fetch(
+    `${BASE_URL}/movie/${id}?api_key=${API_KEY}`
+  );
+  return await res.json();
+}
+
+export async function getMoviesByCategory(category) {
+  const res = await fetch(
+    `${BASE_URL}/movie/${category}?api_key=${API_KEY}`
+  );
+  const data = await res.json();
+  return data.results;
+}
