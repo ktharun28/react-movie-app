@@ -30,5 +30,5 @@ Users can explore popular movies, search for movies, and view detailed informati
 
 ### 1. Clone repository
 ```bash
-git clone https://github.com/your-username/react-movie-app.git
+git clone movie-box-bice.vercel.app
 cd react-movie-app
